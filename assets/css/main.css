@@ -53,6 +53,18 @@
 		text-decoration: underline;
 		margin-top: 150;
 	}
+
+	.skills-row {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.skills-text {
+
+	}
+
 	.column-1 {
 		width: 20%;
 		float: left;
@@ -3863,6 +3875,10 @@
 			display: block;
 			margin: 1em 0 0 0;
 			padding-left: 0;
+		}
+
+		.skills-text {
+			display: hidden;
 		}
 
 			#footer .inner .copyright li:first-child {
