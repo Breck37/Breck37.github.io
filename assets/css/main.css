@@ -1671,7 +1671,7 @@
 	body, input, select, textarea {
 		color: #ffffff;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		font-size: 16.5pt;
+		font-size: 18pt;
 		font-weight: 300;
 		line-height: 1.65;
 	}
@@ -1679,7 +1679,7 @@
 		@media screen and (max-width: 1680px) {
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 18pt;
 			}
 
 		}
@@ -3123,7 +3123,21 @@
 /* Banner */
 
 	#banner {
+		position: relative;
+		overflow: hidden;
 		padding: 10em 0 4.75em 0 ;
+		/* background-image: url('../../images/Water.jpg'); */
+		background-size: cover;
+		/* background: rotate(-10deg); */
+	}
+
+	#banner:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		background: linear-gradient(to top, #2e3141, rgba(46, 49, 65, 0.8)), url("../../images/cracked-concrete.png");
+		background-size: auto, cover;
+		transform: rotate(-30deg);
 	}
 
 		#banner .inner {
@@ -3211,7 +3225,7 @@
 			#banner {
 				padding: 7em 0 8.25em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/cracked-concrete.png");
 				background-size: auto, cover;
 				background-position: center, center;
 				margin-bottom: -6.5em;
@@ -3302,14 +3316,14 @@
 
 		#wrapper > header h2 {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
-			font-size: 2em;
+			font-size: 3em;
 			margin-bottom: 0.8em;
 			padding-bottom: 0.4em;
 		}
 
 		#wrapper > header p {
 			font-family: Raleway, Helvetica, sans-serif;
-			font-size: 1em;
+			font-size: 2em;
 			font-weight: 200;
 			letter-spacing: 0.1em;
 			line-height: 2;
